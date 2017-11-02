@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.north.dev.edittext.mainActivity">
+
+    <EditText
+        android:hint="Masukan Inputan"
+        android:id="@+id/inputData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="Tampilkan"
+        android:layout_below="@+id/inputData"
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Kosongkan Masukkan"
+        android:layout_below="@+id/inputData"
+        android:layout_toRightOf="@+id/btnShow"
+        android:id="@+id/btnErase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text=" Data : "
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnErase"
+        android:id="@+id/textTampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
